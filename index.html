@@ -1,50 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎮 Call of Duty: Black Ops II</title>
-
-  <!-- Vista previa para Discord -->
-  <meta property="og:title" content="🎮 Call of Duty: Black Ops II">
-  <meta property="og:description" content="Descarga directa disponible.">
-  <meta property="og:image" content="https://i.imgur.com/YvN8qXr.png">
-  <meta property="og:url" content="https://akirabox.com/qw1zerQoxGXy/file">
-  <meta property="og:type" content="website">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call of Duty: Black Ops II - Descarga Oficial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #000;
-      color: #0f0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+    :root {
+      --main-orange: #f39c12;
+      --bg-dark: #0a0a0a;
+      --text-light: #f5f5f5;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-color: var(--bg-dark);
+      color: var(--main-orange);
+      font-family: 'Rubik', sans-serif;
+      border-top: 12px solid var(--main-orange);
+      border-bottom: 12px solid var(--main-orange);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+      padding: 60px;
+      max-width: 1800px;
+      width: 100%;
+    }
+
+    .content-left {
+      flex: 1;
+      max-width: 800px;
+    }
+
+    .content-left h1 {
+      font-size: 5rem;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .content-left p {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+
+    .download-btn {
+      background-color: var(--main-orange);
+      color: #111;
+      padding: 18px 40px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border: none;
       border-radius: 12px;
-      box-shadow: 0 0 10px #0f0;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 8px 25px rgba(243, 156, 18, 0.4);
     }
-    h1 {
-      margin-top: 20px;
-      font-size: 32px;
+
+    .download-btn:hover {
+      background-color: #d68910;
+      transform: translateY(-2px);
     }
-    .link-text {
-      margin-top: 10px;
-      color: #0ff;
-      font-size: 18px;
-      word-break: break-all;
+
+    .content-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .content-right img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(243, 156, 18, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .content-right img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 1024px) {
+      html, body {
+        overflow-y: auto;
+      }
+
+      .wrapper {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 60px;
+        text-align: center;
+      }
+
+      .content-left h1 {
+        font-size: 3rem;
+      }
+
+      .content-left p {
+        font-size: 1.3rem;
+      }
+
+      .download-btn {
+        font-size: 1.2rem;
+        padding: 14px 30px;
+      }
+
+      .content-right img {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <img src="https://i.imgur.com/YvN8qXr.png" alt="Black Ops II portada">
+  <main class="wrapper">
+    <div class="content-left">
+      <h1>Black Ops II</h1>
+      <p>
+        Vuelve al combate futurista con uno de los shooters más icónicos de la saga Call of Duty. Campaña intensa, multijugador frenético y zombis inolvidables. ¿Estás listo para la acción?
+      </p>
+      <a class="download-btn" href="https://akirabox.com/qw1zerQoxGXy/file" target="_blank">
+        Descargar Black Ops II
+      </a>
+    </div>
 
-  <h1>🎮 Call of Duty: Black Ops II</h1>
-
-  <p class="link-text">https://akirabox.com/qw1zerQoxGXy/file</p>
+    <div class="content-right">
+      <a href="https://wallpapercave.com/wp/wp1856420.jpg" target="_blank">
+        <img src="https://wallpapercave.com/wp/wp1856420.jpg" alt="Imagen de Call of Duty: Black Ops II">
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>
